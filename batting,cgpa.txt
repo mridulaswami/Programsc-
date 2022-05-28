@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int s,o,m;
+    double a,c;
+    cin>>s>>o;
+    a=s/o;
+    m=c*9.5;
+    cout<<"batting average is "<<a;
+    cout<<"percentage of cgpa is "<<m;
+    return 0;
+}
+    
+    

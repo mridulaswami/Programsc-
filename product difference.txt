@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a,pro=1,r,sum=0,sub=0;
+    cin>>a;
+    while(a>0){
+    r=a%10;
+    pro=pro*r;
+    sum=sum+r;
+    a=a/10;
+    }
+    cout<<"sum is"<<" "<<sum<<endl;
+    cout<<"product is"<<" "<<pro<<endl;
+    sub=pro-sum;
+    cout<<"difference between two is "<<" "<<sub;
+    return 0;
+    }

@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int a,b,max,min,i,hcf;
+	cin>>a>>b;
+	max=(a>b)?a:b;
+	while(1){
+	    if(max%a==0 && max%b==0){ cout<<"LCM is"<<max<<endl;
+	    break;
+	    }
+	    ++max;
+	}
+	min=(a<b)?a:b;
+	for(i=1;i<=min;i++){
+	    if(a%i==0 && b%i==0) {
+	        hcf=i;
+	}
+	}
+	cout<<"HCF is"<<hcf<<endl;
+	return 0;
+}	

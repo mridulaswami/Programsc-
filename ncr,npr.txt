@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n,r,fn=1,fr=1,fnr=1,g,npr=1,ncr=1;
+    cin>>n>>r;
+    for(int i=1;i<=n;i++){
+        fn=fn*i;
+    } 
+    cout<<"factorial for n is "<<fn<<endl;
+    for(int i=1;i<=r;i++){
+        fr=fr*r;
+    }
+    cout<<"factorial for r is "<<fr<<endl;
+    g=n-r;
+    for(int i=1;i<=g;i++){
+        fnr=fnr*i;
+    }
+    cout<<"factorial for (n-r) is "<<fnr<<endl;
+    npr=fn/fnr;
+    ncr=fn/fr;
+    cout<<"npr is "<<npr<<endl;
+    cout<<"ncr is "<<ncr;
+    return 0;
+}   

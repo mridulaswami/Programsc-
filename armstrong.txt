@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int i,l,h,temp,r,count=0,sum=0;
+    cin>>l >>h;
+    for(i=l+1;i<=h;i++){
+        temp=i;
+        while(temp > 0) {
+         ++count;
+         temp /= 10;
+        }
+        temp=i;
+        while(temp>0){
+        r=temp%10;
+        sum=sum+pow(r,count);
+        temp=temp/10;
+        }
+        if(sum==i){
+        cout<<i<<",";}
+    }
+    return 0;
+}    						

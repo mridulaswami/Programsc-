@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int n,neg=0,podd=0,peven=0,zer=0;
+	cin>>n;
+	int a[n];
+	for(int i=0;i<n;i++){
+	    cin>>a[i];
+	}
+	for(int i=0;i<n;i++){
+	    if(a[i]>0 && a[i]%2==0)
+	    peven=peven+a[i];
+	    else if(a[i]>0 && a[i]%2!=0)
+	    podd=podd+a[i];
+	    else if(a[i]<0) 
+	    neg=neg+a[i];
+	    else
+	    zer=0;
+	}
+	cout<<"sum of Positive even are "<<peven<<endl;
+	cout<<"sum of positive odd are "<<podd<<endl;
+	cout<<"sum of negative are "<<neg;
+}

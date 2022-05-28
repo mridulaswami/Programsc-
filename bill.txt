@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int unit,sum;
+    cin>>unit;
+    sum=unit*6.06;
+    cout<<"Total bill = "<<" "<<sum;
+    return 0;
+}
+    

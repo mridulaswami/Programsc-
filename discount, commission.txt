@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int p,d,c,df=0,com=0;
+    cin>>p>>d>>c;
+    df=p-(p*d/100);
+    com=(p*c/100);
+    cout<<"final product with discount is"<<" "<<df<<endl;
+    cout<<"Total commission is "<<" "<<com;
+    return 0;
+}
+   
+    

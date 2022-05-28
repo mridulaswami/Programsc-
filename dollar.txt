@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int i;
+    float d;
+    cin>>i;
+    d=i/75.77;
+    cout<<"Dollars are "<<d;
+    return 0;
+}           						

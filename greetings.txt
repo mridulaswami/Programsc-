@@ -1,0 +1,9 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	string n;
+	cin>>n;
+    cout<<"Hyy "<< n<< " , do you know that I love you a lot.\n";
+}	
+				

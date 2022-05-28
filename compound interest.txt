@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int p,r,t;
+    float ci=0;
+    cin>>p>>r>>t;
+    ci = p * (pow(1+r/100, t) - 1);
+    cout<<ci;
+    return 0;
+}
+    
